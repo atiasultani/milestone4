@@ -1,0 +1,116 @@
+<!--Milestone 4: Editable Resume  
+Objective:
+Make the generated resume editable after it’s created. 
+Requirements: 
+ Implement the ability for users to click on sections of the resume (e.g., Education, Work 
+Experience) and directly edit them. 
+ Ensure the changes are reflected immediately without reloading the page. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div>
+
+    <form id="form1">
+
+      <div id="img">
+        <img id="im_dp" src="" alt="Upload Your Picture" />
+         
+        <input id="Image" type="file"  src="#" alt="Image"
+          accept="Image/.jpeg  Image/.png  Image/.jpg  " />
+      </div>
+
+      <h1 id="main-heading"> Editable Resume </h1>
+      <hr>
+      <h1> Personal Information </h1>
+
+      <b>Name :</b>
+      <input id="name" type="text" name="Full Name" size="30" Max length="30"
+        placeholder="Enter Your Full Name"
+        required />
+      <br>
+      <b>Gender :</b>
+      <input id="male" type="radio" name="gender" value="Male" /> Male
+      <input id="Female" type="radio" name="gender" value="Female" /> Female
+      <br />
+
+      <b>Nationality: </b>
+
+      <input id="nationality" type="text" name="nationality" size="25" Max
+        length="30" required />
+      <br />
+
+      <b>Phone no : </b>
+      <input id="phone" type="tel" name="ph" size="26" Max length="30"
+        required />
+      <br />
+
+      <b>E-Mail : </b>
+      <input id="email" type="email" name="E-Mail" size="28" Max length="30"
+        required />
+
+      <hr>
+
+      <h1> Experience </h1>
+      <textarea id="exp" name="Experience" rows="20" cols="30"
+        placeholder="Write Your Experience Here"
+        required></textarea>
+
+      <hr>
+
+      <h1> Academic Education </h1>
+      <b> Master :</b>
+      <input id="master" type="text" name="Master" size="50"
+        placeholder="Master Education Details" required />
+      <br />
+      <b> Graduation :</b>
+      <input id="graduation" type="text" name="Graduation" size="50"
+        placeholder="Graduation Education Details" required />
+      <br />
+      <b>H.S.C:</b>
+      <input id="hsc" type="text" name="HSC" size="50"
+        placeholder="H.S.C Education Details" required />
+      <br />
+      <b>S.S.C :</b>
+      <input id="ssc" type="text" name="SSC" size="50"
+        placeholder="S.S.C Education Details" required />
+
+      <b>Others</b>
+      <input id="others" type="text" name="Others" size="50"
+        placeholder="Details"  />
+      <hr>
+
+      <h1> Attributes </h1>
+
+      <textarea id="attri" name="Attributes" rows="20" cols="30"
+        placeholder="Write Your Attributes" required></textarea>
+
+      <hr>
+
+      <h1> Skills </h1>
+
+      <textarea id="skills" name="Experience" rows="20" cols="30"
+        placeholder="Write Your Skills" required>
+    </textarea>
+
+      <button type='submit' id="keyB"> Submit </button>
+
+    </form>
+
+  </div >
+
+  <div id="output"  contenteditable="text"> </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
